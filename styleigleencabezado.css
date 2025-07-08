@@ -4,14 +4,13 @@ body {
 
 .izquierda {
     background: yellow;
-    height: 130px;
+    height: 90px;
     max-width: 100%;
-    height: auto;
 }
 
 .derecha {
     background: yellow;
-    height: 130px;
+    height: 70px;
     width: 100%;
     display: flex;
     align-items: center; 
@@ -38,7 +37,7 @@ h1 {
 .flex-container {
     display: flex;
     justify-content: space-between;
-    
+    flex-direction: column;
 }
 
 .navegacion{
