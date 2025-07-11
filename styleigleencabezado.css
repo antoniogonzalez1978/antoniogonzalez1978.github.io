@@ -196,6 +196,13 @@ img {
     height: 50px;
 }
 
+@media (max-width: 768px) {
+  /* Estilos para pantallas con ancho máximo de 768px (tabletas y móviles) */
+  .titulo-columna {
+    font-size: 25px;
+  }
+}
+
 .imagenes-centrales {
     width: 400px;
     height: 100%;
