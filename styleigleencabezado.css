@@ -41,6 +41,72 @@ h1 {
     flex-direction: column;
 }
 
+body {
+      font-family: Arial, sans-serif;
+    }
+    .navbar {
+      background: black;
+      color: #fff;
+      padding: 10px 20px;
+      position: relative;
+      height: 50px;
+    }
+    .navbar h1 {
+      display: inline-block;
+      margin: 0;
+      font-size: 22px;
+    }
+    .menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      background: #333;
+      z-index: 2;
+    }
+    .menu a {
+      color: #fff;
+      padding: 15px 20px;
+      text-decoration: none;
+      border-top: 1px solid #444;
+      transition: background 0.3s;
+    }
+    .menu a:hover {
+      background: #444;
+    }
+    .hamburger {
+      display: inline-block;
+      cursor: pointer;
+      float: right;
+      margin-top: 4px;
+    }
+    .bar {
+      display: block;
+      width: 28px;
+      height: 4px;
+      margin: 5px 0;
+      background: #fff;
+      border-radius: 2px;
+      transition: 0.4s;
+    }
+    @media (min-width: 800px) {
+      .menu {
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        background: none;
+      }
+      .menu a {
+        border-top: none;
+        padding: 10px 15px;
+      }
+      .hamburger {
+        display: none;
+      }
+    }
 
 .flex-container2{
     display: flex;
