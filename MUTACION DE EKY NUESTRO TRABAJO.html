@@ -22,6 +22,18 @@
             scroll-behavior: smooth;
         }
 
+         @media screen and (max-width: 768px) {
+         .slider-wrapper {
+            display: flex;
+            width: 250px;
+            height: 150px;
+            overflow-x: hidden;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            text-align: center;
+        }
+                
+        }   
         .slider-item {
             flex: 0 0 100%;
             width: 100%;
@@ -145,3 +157,4 @@
     </body>
 
 </html>
+
